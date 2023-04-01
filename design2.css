@@ -1,0 +1,235 @@
+/**
+* @name LilyPichu
+* @author Nyria#3863
+* @description A theme based on @Melonturtle_ stream design
+* @invite rtBQX5D3bD
+* @version 1.4
+* @donate https://ko-fi.com/nyria
+*/
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://nyri4.github.io/LilyPichu/main.css");
+
+/* Remove decorations */
+@import url("https://nyri4.github.io/LilyPichu/stuff/overlay.css");
+
+:root {
+  /* --- User variables --- */
+  --background-mentioned: #d9bbf938;
+  /* Jumping GIF */
+  --jumping-gif: url("https://i.imgur.com/dCd49s0.gif");
+
+  /* Background (if you want an image replace it by : 
+
+--background-tertiary-alt: url("image-link"); without that => */
+  --background-tertiary-alt: linear-gradient(
+    to left bottom,
+    var(--background-primary),
+    var(--background-secondary-alt),
+    var(--background-secondary)
+  );
+
+  /* Border-radius for the whole theme */
+  --border-radius: 25px;
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+}
+
+.theme-dark {
+  /* Text */
+
+  --text-normal: #f8e1e5;
+  --header-primary: #f8e1e5;
+  --interactive-normal: #fab1bd;
+  --channels-default: #f8e1e5;
+
+  --text-muted: #e2c1c7;
+  --interactive-muted: #ad8c91;
+
+  --header-secondary: #e2c1c7;
+  --Hover-message: #e2c1c7;
+  --interactive-hover: #e2c1c7;
+  --interactive-active: #e2c1c7;
+
+  /* Background color */
+  --background-primary: #0D0C1D;
+  --background-secondary: #161B33;
+  --background-secondary-alt: #474973;
+  --background-tertiary: #A69CAC;
+  --background-floating: var(--background-primary);
+  --background-accent: #F1DAC4;
+  --channeltextarea-background: var(--background-secondary);
+  --background-modifier-hover: rgba(56, 31, 31, 0.32);
+  --background-modifier-active: rgba(19, 12, 12, 0.32);
+  --background-modifier-selected: rgba(31, 21, 21, 0.32);
+  --toast-background: #5e3640 !important;
+  --toast-header: #3b1d24 !important;
+  --toast-contents: #49292f !important;
+  --toast-border: #49292f !important;
+  --input-background: var(--background-secondary);
+
+  /* Scrollbar */
+  --scrollbar-auto-thumb: var(--background-tertiary);
+  --scrollbar-auto-track: var(--background-secondary-alt);
+  --scrollbar-thin-thumb: var(--background-tertiary);
+  --scrollbar-thin-track: transparent;
+
+  /* Other */
+  --channel-text-area-placeholder: var(--interactive-normal);
+  --deprecated-quickswitcher-input-background: var(--background-primary);
+}
+
+
+/* Panels */
+  .container-1eFtFS::before {
+    content: "";
+    position: fixed;
+    top: 220px;
+    bottom: 85px;
+    right: 56px;
+    z-index: -1;
+    width: 324px;
+    border-radius: var(--border-radius);
+    background: var(--jumping-gf) bottom/40% no-repeat;
+    border: 2px solid #efefef;
+    background: transparent !important;
+  }
+
+.contents-3NembX::before {
+    display:none;
+}
+
+
+:root .ready-3BZNWT{
+    background: blue;
+ }
+.chatContent-3KubbW + :last-child, .container-2o3qEW {
+    top: 240px;
+   
+}
+
+:root .membersWrap-3NUR2t::after {
+    display: none;
+}
+
+:root .membersWrap-3NUR2t::before {
+    top: -100px !important;
+    border-radius: 20px;
+    border: 2px solid #efefef
+}
+
+.panels-3wFtMD > .container-YkUktl {
+    border: 2px solid #efefef;
+    margin-bottom: -2px !important;
+}
+
+.banner-2boKnS .panelBanner-13bsBR .bannerPremium-86naOf .bannerSVGWrapper-qc0szY{
+  background: blue !important;
+}
+/* Buttons */
+.lookFilled-yCfaCM {
+  background-color: #c5536c !important;
+}
+.lookFilled-yCfaCM:active,
+.lookFilled-yCfaCM:hover {
+  background-color: #b64a61 !important;
+}
+
+.lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
+  color: #c5536c;
+  border-color: #c5536c;
+}
+.overlayBackground-1KgwVi {
+  background: transparent !important;
+  border: 2px rgba(255, 255, 255, 0.281) solid;
+}
+/* Hover background */
+.colorDefault-CDqZdO.focused-3qFvc8,
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+  color: var(--interactive-normal);
+}
+.mentioned-Tre-dv  {
+  border-radius: 20px;
+}
+
+.message-group .mentioned .message-text  {
+  border-left: 4px solid #0e0c0a;
+}
+.colorBrand-3cPPsm {
+  color: #c5536c;
+}
+.colorDefault-CDqZdO.focused-3qFvc8,
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+  background-color: var(--background-modifier-hover) !important;
+}
+d9bbf9
+/* Buttons */
+.lookFilled-yCfaCM {
+  background-color: #c5536c !important;
+}
+.lookFilled-yCfaCM:active,
+.lookFilled-yCfaCM:hover {
+  background-color: #b64a61 !important;
+}
+.lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
+  color: #c5536c;
+  border-color: #c5536c;
+}
+
+/* Hover background */
+.colorDefault-CDqZdO.focused-3qFvc8,
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+  color: var(--interactive-normal);
+}
+
+.messageListItem-ZZ7v6g {
+  transition-property: color;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+.messageListItem-ZZ7v6g:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--Hover-message);
+  opacity: 25%;
+  border-radius: 20px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.messageListItem-ZZ7v6g:hover, .messageListItem-ZZ7v6g:focus, .messageListItem-ZZ7v6g:active {
+  color: white;
+}
+.messageListItem-ZZ7v6g:hover:before, .messageListItem-ZZ7v6g:focus:before, .messageListItem-ZZ7v6g:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
