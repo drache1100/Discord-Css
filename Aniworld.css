@@ -1,0 +1,90 @@
+.changeLanguageBox {
+  background:var(--bg);
+  border:none;
+}
+
+.hosterSectionTitle {
+  display:none;
+}
+
+
+.hosterSiteVideo ul li>div, .reportVideoLayerForm {
+  
+  border:none;
+  background: var(--bg);
+}
+
+.tabs>div, .friendList>ul>li .friendshipRequestsItem, .hosterSiteVideo {
+  background: var(--wrapper) ;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+body {
+  background: var(--bg) !important;
+}
+
+.main-header {
+  background: var(--wrapper)!important;
+  
+}
+
+.logo-wrapper {
+ display:none;
+}
+
+.primary-navigation {
+  background: var(--wrapper)!important;
+}
+
+
+.header-container a{
+  border: 0px solid red
+  display:none !important;
+}
+.header-container:hover a {
+  border: 0px solid red
+}
+
+
+.add-series {
+  display: none;
+}
+#series .title .series-meta .series-title .fsk  {
+  display:none;
+}
+.imdb-link  {
+  display:none;
+}
+.seriesCoverBox {
+  display:none;
+}
+.backdrop {
+  display:none;
+}
+#series .title {
+  background: var(--bg);
+  border-bottom: none;
+}
+
+.hosterSiteDirectNav {
+  display:none;
+}
+
+.header-content {
+  display: none;
+}
+
+#mainButton {
+  position: absolute;
+  top: 15px;
+  left: 800px;
+  width:200pX;
+  height: 50px;
+  border: none;
+  border-radius:200pX;
+  background: var(--bg);
+  cursor:pointer;
+  color:white;
+}
+
