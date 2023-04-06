@@ -1,3 +1,10 @@
+
+
+:root {
+--wrapper:#21A0A0;
+--bg:#046865; 
+}
+
 .changeLanguageBox {
   background:var(--bg);
   border:none;
@@ -86,5 +93,103 @@ body {
   background: var(--bg);
   cursor:pointer;
   color:white;
+}
+.shoutbox {
+  display:none;
+}
+h3,p {
+ display:none;
+} 
+.newEpisodeList {
+  background: var(--wrapper);
+  border-radius: 20px;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+.animNewsBox a:hover {
+  border-top: none;
+}
+.animNewsBox a {
+  border-top: none;
+  box-shadow: none;
+  
+}
+.previews {
+  background: transparent !important;
+}
+
+.paragraph-end {
+  display:none;
+}
+.newEpisodeList {
+  box-shadow: none;
+}
+.col-lg-12 {
+  background: var(--wrapper);
+}
+#supportFAQ{
+  display:none;
+}
+.col-md-9 {
+  display:none;
+}
+img {
+  border-radius: 10px;
+  background: transparent;
+}
+.seriesListHorizontalCover {
+  background: transparent;
+}
+.homeContentPromotionBox>.homeSliderView .col-md-3, .registerNowButton {
+  background: transparent;
+}
+.col-md-12 .col-sm-12 .col-xs-12 {
+  display:none;
+}
+.prev, .next {
+ 
+  background: var(--wrapper)!important;
+}
+.fa-chevron-left:before:hover {
+  color:red !important;
+}
+img:hover {
+  background:transparent;
+}
+.listTag.blue2 {
+  border: 2px solid var(--bg);
+}
+.homeContentGenresList li a, .homeContentGenresList li>div{
+ background: var(--wrapper);
+}
+.fullBackgroundSize {
+  background: var(--bg)!important;
+}
+.footer-container {
+  background: var(--bg);
+}
+
+.footer-container .wrapper h4{
+  color: var(--wrapper);
+}
+.Suche{
+    position: absolute!important;
+  top: 15px!important;
+  left: 800px!important;
+  width:200pX!important;
+  height: 50px!important;
+  border-bottom: 2px solid var(--bg)!important;
+      width: 100%;
+    font-size: 30px;
+    background: transparent;
+    border-radius: 0px;
+    outline: none;
+    margin-bottom: 80px;
+    box-shadow: none;
+    border: none;
+    border-bottom: 4px solid #637cf9;
+    padding: 11px 0px;
+    color: #fff;
 }
 
